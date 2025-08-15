@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Advanced Content and Forms Example">
+    <title>Healthy Lifestyle - HTML5 Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header, footer {
+            background-color: #2d6a4f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th {
+            background-color: #95d5b2;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-top: 8px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 6px;
+            margin-top: 4px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #40916c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2d6a4f;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Healthy Lifestyle</h1>
+    <nav>
+        <ul>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#nutrition-table">Nutrition Table</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#contact-form">Contact Form</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Benefits List -->
+    <section id="benefits">
+        <h2>Benefits of a Balanced Diet</h2>
+        <ul>
+            <li>Boosts immune system</li>
+            <li>Improves mental health</li>
+            <li>Maintains healthy weight</li>
+            <li>Increases energy levels</li>
+        </ul>
+    </section>
+
+    <!-- Nutrition Table -->
+    <section id="nutrition-table">
+        <h2>Daily Nutrition Recommendations</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nutrient</th>
+                    <th>Daily Intake</th>
+                    <th>Sources</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Protein</td>
+                    <td>50g</td>
+                    <td>Chicken, Fish, Beans</td>
+                </tr>
+                <tr>
+                    <td>Fiber</td>
+                    <td>25g</td>
+                    <td>Fruits, Vegetables, Whole grains</td>
+                </tr>
+                <tr>
+                    <td>Vitamin C</td>
+                    <td>90mg</td>
+                    <td>Oranges, Strawberries, Peppers</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section id="media">
+        <h2>Healthy Lifestyle Inspiration</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Healthy Food">
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <video width="400" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video element.
+        </video>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="1" max="120" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Preferences</legend>
+                <label for="diet">Preferred Diet Type:</label>
+                <select id="diet" name="diet" required>
+                    <option value="">-- Select one --</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="balanced">Balanced</option>
+                    <option value="keto">Keto</option>
+                </select>
+
+                <label>Subscribe to newsletter:</label>
+                <input type="radio" id="yes" name="subscribe" value="yes" required> Yes
+                <input type="radio" id="no" name="subscribe" value="no"> No
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+                <textarea name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Healthy Lifestyle. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
